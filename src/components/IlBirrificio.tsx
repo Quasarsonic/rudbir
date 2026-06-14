@@ -28,14 +28,14 @@ export default function IlBirrificio() {
         title="Giro virtuale nel birrificio Rud Bir"
       />
 
-      <p className="mb-8 leading-relaxed text-neutral-600">
+      <p className="mb-8 leading-relaxed text-zinc-300">
         Fatti un giro virtuale nel birrificio{" "}
         <span className="italic">[cliccando sul video qui sopra]</span>, oppure passa a
         trovarmi a Gordola in via S. Gottardo 80.
       </p>
 
-      <h3 className="mb-4 text-base font-bold tracking-wider text-neutral-800">AMISI</h3>
-      <p className="mb-4 leading-relaxed text-neutral-600">
+      <h3 className="mb-4 text-base font-bold tracking-wider text-zinc-100">AMISI</h3>
+      <p className="mb-4 leading-relaxed text-zinc-300">
         Per lo start-up del micro-birrificio, Rud Bir è stata sostenuta, coaudiuvata e
         supervisionata da AMISI, Associazione Microcredito della Svizzera Italiana.
         Approfitto per ringraziare l&apos;associazione AMISI per il lavoro professionale,
@@ -45,12 +45,17 @@ export default function IlBirrificio() {
         <ExternalLink href="https://www.amisi.ch">www.amisi.ch</ExternalLink>
       </p>
 
-      <ContentImage src="/images/rud2.jpg" alt="Birrificio Rud Bir" />
+      <ContentImage
+        src="/images/rud2.jpg"
+        alt="Birrificio Rud Bir"
+        width={1076}
+        height={761}
+      />
 
-      <h3 className="mb-4 text-base font-bold tracking-wider text-neutral-800">
+      <h3 className="mb-4 text-base font-bold tracking-wider text-zinc-100">
         LUKA &quot;RUDE BOY&quot; FERRARA
       </h3>
-      <div className="space-y-4 leading-relaxed text-neutral-600">
+      <div className="space-y-4 leading-relaxed text-zinc-300">
         <p>
           Luka sono io. 40 enne con una passione per la chimica e per la musica. Sono una voce
           di Rete 3 (Luka Rude Boy), gioco a fare il dj nei locali e nelle tendine, presento
@@ -66,17 +71,17 @@ export default function IlBirrificio() {
           Per qualsiasi altra informazione, mi potete contattare all&apos;indirizzo{" "}
           <a
             href="mailto:info@rudbir.ch"
-            className="text-[var(--color-rud-green)] hover:underline"
+            className="text-amber-400 transition-colors hover:text-yellow-500 hover:underline"
           >
             info@rudbir.ch
           </a>
         </p>
       </div>
 
-      <h3 className="mb-4 mt-10 text-base font-bold tracking-wider text-neutral-800">
+      <h3 className="mb-4 mt-10 text-base font-bold tracking-wider text-zinc-100">
         DICONO DI RUD BIR
       </h3>
-      <ul className="mb-8 space-y-2">
+      <ul className="mb-8 min-w-0 space-y-2 break-words">
         {PRESS_LINKS.map((link) => (
           <li key={link.href}>
             <ExternalLink href={link.href}>{link.label}</ExternalLink>
@@ -84,7 +89,7 @@ export default function IlBirrificio() {
         ))}
       </ul>
 
-      <h3 className="mb-4 text-base font-bold tracking-wider text-neutral-800">
+      <h3 className="mb-4 text-base font-bold tracking-wider text-zinc-100">
         E AVETE VISTO?
       </h3>
       <p className="mb-6">
@@ -93,7 +98,7 @@ export default function IlBirrificio() {
         </ExternalLink>
       </p>
 
-      <p className="mb-6 text-center tracking-widest text-neutral-400">***</p>
+      <p className="mb-6 text-center tracking-widest text-zinc-500">***</p>
 
       <VideoEmbed type="vimeo" id="108791948" title="Rud Bir — Video" />
     </Section>

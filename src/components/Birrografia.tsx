@@ -86,18 +86,24 @@ const ARCHIVE_BEERS = [
 export default function Birrografia() {
   return (
     <Section id="birrografia" title="BIRROGRAFIA">
-      <p className="mb-8 leading-relaxed text-neutral-600">
+      <p className="mb-8 leading-relaxed text-zinc-300">
         Lista non esaustiva delle varie birre prodotte nel tempo.
         <br />
         Le birre non più in produzione potrebbero tornare, chiedete al birraio.
       </p>
 
-      <ContentImage src="/images/Rud3.jpg" alt="Birrografia Rud Bir" />
+      <ContentImage
+        src="/images/Rud3.jpg"
+        alt="Birrografia Rud Bir"
+        width={1170}
+        height={1636}
+        productCard
+      />
 
       <ol className="list-none space-y-0">
         {ARCHIVE_BEERS.map((beer, index) => (
-          <li key={beer.name} className="relative pl-8">
-            <span className="absolute left-0 top-0 font-bold text-neutral-400">
+          <li key={beer.name} className="relative min-w-0 pl-8">
+            <span className="absolute left-0 top-0 font-bold text-amber-400/70">
               {index + 1}
             </span>
             <BeerCard

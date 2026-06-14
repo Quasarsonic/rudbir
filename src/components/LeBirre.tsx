@@ -1,17 +1,27 @@
-import Section, { BeerCard, ContentImage } from "./Section";
+import Section, { BeerCard, ContentImage, CtaButton } from "./Section";
 
 export default function LeBirre() {
   return (
     <Section id="le-birre" title="LE BIRRE">
-      <p className="mb-6 leading-relaxed text-neutral-600">
+      <p className="mb-6 leading-relaxed text-zinc-300">
         Catalogo delle birre in produzione, disponibili in bottiglie [33 cl] o in fusto [20 l].
         <br />
         È possibile noleggiare la spina.
       </p>
 
-      <ContentImage src="/images/Rud1.jpg" alt="Birre Rud Bir" />
+      <div className="mb-8">
+        <CtaButton href="#contatti">Ordina o noleggia la spina</CtaButton>
+      </div>
 
-      <h3 className="mb-6 text-base font-bold tracking-wider text-neutral-800">RUD BIR</h3>
+      <ContentImage
+        src="/images/Rud1.jpg"
+        alt="Birre Rud Bir"
+        width={1170}
+        height={460}
+        productCard
+      />
+
+      <h3 className="mb-6 text-base font-bold tracking-wider text-zinc-100">RUD BIR</h3>
 
       <BeerCard
         name="SPECIALINA"
@@ -33,13 +43,20 @@ export default function LeBirre() {
       />
 
       <BeerCard
+        name="TISANA DELLA VERZASCA"
+        abv="tisana artigianale"
+        description="Infuso alle erbe della valle, con note di montagna e sentori agrumati. Una tisana artigianale prodotta a Gordola con ingredienti selezionati del territorio ticinese — perfetta per chi cerca calma e autenticità locale."
+        heritageLabel="Prodotto locale della Valle Verzasca"
+      />
+
+      <BeerCard
         name="AMBER"
         abv="5 % alc."
         vegan
         description="Indian Pale Ale moderata nell'alcol e nell'amaro. Equilibrio fra il caramello, i profumi e gli aromi di frutta rossa, come le fragole di bosco. Ideale per ritrovare l'equilibrio!"
       />
 
-      <h3 className="mb-6 mt-10 text-base font-bold tracking-wider text-neutral-800">
+      <h3 className="mb-6 mt-10 text-base font-bold tracking-wider text-zinc-100">
         LE NOSTRANE
       </h3>
 
